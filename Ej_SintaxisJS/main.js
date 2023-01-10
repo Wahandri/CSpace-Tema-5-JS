@@ -381,16 +381,21 @@ console.log("_____________EJ_19_______________________________");
 
 arrayMix = ["Hola", 4, false, "Adios", 8, true];
 
-function typeArray(X) {
-    while (i < X.length) {
-        let newArray = [];
-        newArray[i] = typeof(X[i]);
-        i++;
-    }
-        return newArray;
-}
 
-console.log(typeof(arrayMix));
+function ej20(X) {
+    let listType = [];
+    for (i=0; i < X.length; i++) {
+        listType.push(typeof(arrayMix[i]));
+    }
+    return listType;
+};
+
+console.log(ej20(arrayMix));
+
+// for (i=0; i < arrayMix.length; i++) {
+//     console.log(arrayMix[i]);
+//     console.log(arrayMix[i]);
+// }
 
 
 console.log("_____________EJ_20_______________________________");
