@@ -1,0 +1,18 @@
+.contEj {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titleBody {
+    display: flex;
+    justify-content: center;
+    border: 2px solid rgba(46, 161, 255, 0.577);
+    border-radius: 5px;
+    background-color: rgb(170, 217, 255);
+    width: 60%;
+}
+
+.titleBody:hover {
+   background-color: rgba(46, 161, 255, 0.577); 
+}
