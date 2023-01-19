@@ -575,7 +575,7 @@ console.log("_____________EJ_28_______________________________");
 //  Crea una función en una única línea que reciba un valor lógico 
 //  y devuelva el opuesto.
 
-let logico = function (X) { if (X === false) {return X = true} else {return X = false}};
+const logico = (verdad) => !verdad;
 
 console.log(logico(false));
 console.log(logico(true));
