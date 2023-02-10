@@ -1,3 +1,8 @@
+
+
+
+
+
 // Apartado 1
 
         // const box1 = document.getElementById("textarea");
@@ -223,6 +228,16 @@ boton11.addEventListener("click", () => {
 
 // Apartado 12
 
-const boton12 = document.getElementById("boton12");
+const boton12 = document.getElementsByClassName("boton12");
 
 boton12.onclick = (e) => { e.target.classList.toggle("btn")};
+
+
+
+// Apartado 13
+
+const buttons = document.getElementsByClassName("btn");
+
+Array.from(buttons).forEach(button => {
+    button.onclick = e => {e.target.backgroundColor = "red";
+}});

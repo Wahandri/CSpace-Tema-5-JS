@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Ejercicio 4</h1>
+    <h6>Crear una tabla que muestre un array de libros guardado en memoria. Requisitos:
+        <br> 1. Usar estilos de Bootstrap 4. Se puede utilizar el CSS directamente desde el CDN.
+        <br> 2. Crear un constructor de objeto Book con los siguientes atributos: ID, título, autor, ventas y precio.
+        <br> 3. Rellenar un array con 10 libros.
+        <br> 4. Para cada elemento del array, tendremos crear una nueva fila en la tabla con las columnas para todas las
+        propiedades del objeto además de un botón para poder eliminar el libro.
+        <br> Se aconseja la creación de una función para actualizar la tabla (o el tbody) desde cero.
+        <br> 5. Si el botón de eliminar es pulsado, borrará el libro del array y actualizará la tabla.
+        <br> 6. Añadir un pequeño formulario después de la tabla para poder anexar un nuevo libro a nuestro array. Tras
+        hacer submit, además de añadirlo, deberá actualizar la tabla y vaciar los inputs.
+    </h6>
+
+    <h1>Ejercicio 5</h1>
+    <h6>1. Realizar una tabla filtrable. Tendremos un input de búsqueda y una tabla de libros rellena
+      por JavaScript. Cada vez que cambie el input, se actualizará la tabla para que aparezcan
+      sólo los libros cuyos títulos contengan lo que estamos introduciendo en el input.
+      Partiremos del ejercicio 4 en lo que nos haga falta.
+      <br> 2. Añadiremos un botón para ordenar la tabla por el precio de forma creciente / decreciente.
+      (Efecto toggle).
+      <br> 3. Añadiremos una última fila en tfoot, separada del resto, que nos sume los precios de los
+      libros que están presentes en la tabla en ese momento.</h6>
+
+    <div id="boxTable" class="content border border-primary flex">
+      <table class="table">
+        <div class="container-fluid d-flex p-2 justify-content-between">
+          
+          <button id="buttonPrice" class="btn btn-secondary">Ordenar por Precio</button>
+          <input placeholder="Buscar"  type="text" name="buscador" id="filterInput">
+        </div>
+        <thead class="bg-black text-white">
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Titulo</th>
+            <th scope="col">Autor</th>
+            <th scope="col">Ventas</th>
+            <th scope="col">Precio</th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody id="table">
+          
+        </tbody>
+    
+      </table>
+    </div>
+    <div id="boxInputs" class="border border-primary d-md-flex">
+      <h2>Añadir libro</h2>
+      
+      <input placeholder="Nombre del Libro" type="text" name="title" id="titleInput">
+      <input placeholder="Nombre del Autor" type="text" name="autor" id="autorInput">
+      <input placeholder="Ventas" type="number" name="sales" id="salesInput">
+      <input placeholder="Precio" type="number" name="price" id="priceInput">
+      <button class="btn btn-success" id="buttonInput">Añadir</button>
+      
+    </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
