@@ -64,7 +64,7 @@ const p3_3 = document.getElementById("parrafo3");
 const img3 = document.getElementById("imgX");
 
 function imgClick(X) {
-    X.addEventListener("click", function (e) {
+    X.addEventListener("click", function () {
         img3.setAttribute("src", X.innerText);
     } );
 }
